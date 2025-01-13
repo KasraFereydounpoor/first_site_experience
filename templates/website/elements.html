@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
 <!-- start banner Area -->
 <section class="relative about-banner" id="home">
   <div class="overlay overlay-bg"></div>
@@ -460,7 +462,7 @@
           <a href="{% static 'img/elements/g1.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url(img/elements/g1.jpg)"
+              style="background: url({%static 'img/elements/g1.jpg' %})"
             ></div
           ></a>
         </div>
@@ -468,7 +470,7 @@
           <a href="{% static 'img/elements/g2.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url(img/elements/g2.jpg)"
+              style="background: url({%static 'img/elements/g2.jpg' %})"
             ></div
           ></a>
         </div>
@@ -476,7 +478,7 @@
           <a href="{% static 'img/elements/g3.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url(img/elements/g3.jpg)"
+              style="background: url({% static 'img/elements/g3.jpg' %})"
             ></div
           ></a>
         </div>
@@ -484,7 +486,7 @@
           <a href="{% static 'img/elements/g4.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url(img/elements/g4.jpg)"
+              style="background: url({% static 'img/elements/g4.jpg' %})"
             ></div
           ></a>
         </div>
@@ -492,7 +494,7 @@
           <a href="{% static 'img/elements/g5.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url(img/elements/g5.jpg)"
+              style="background: url({% static 'img/elements/g5.jpg' %})"
             ></div
           ></a>
         </div>
@@ -516,7 +518,7 @@
           <a href="{% static 'img/elements/g8.jpg' %}" class="img-gal"
             ><div
               class="single-gallery-image"
-              style="background: url('img/elements/g8.jpg);"
+              style="background: url({% static 'img/elements/g8.jpg' %});"
             ></div
           ></a>
         </div>
@@ -849,5 +851,4 @@
     </div>
   </div>
 </div>
-<!-- End Align Area -->
 {% endblock %}

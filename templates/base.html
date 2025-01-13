@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Favicon-->
-    <link rel="shortcut icon" href="{ % static 'img/fav.png" />
+    <link rel="shortcut icon" href="{% static 'img/fav.png' %}" />
     <!-- Author Meta -->
     <meta name="author" content="colorlib" />
     <!-- Meta Description -->
@@ -22,7 +22,7 @@
     <title>Travel</title>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      href="{% static 'https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700'%}"
       rel="stylesheet"
     />
     <!--
@@ -152,7 +152,7 @@
               <div id="mc_embed_signup">
                 <form
                   target="_blank"
-                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  action="{% static 'https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01'%}"
                   method="get"
                   class="subscription relative"
                 >
@@ -178,14 +178,14 @@
             <div class="single-footer-widget mail-chimp">
               <h6 class="mb-20">InstaFeed</h6>
               <ul class="instafeed d-flex flex-wrap">
-                <li><img src="{ % static 'img/i1.jpg' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i2.jpg' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i3.jpg' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i4.jpg' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i5.jpg' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i6.jpg' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i7.jpg' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i8.jpg' %}" alt="" /></li>
+                <li><img src="{% static 'img/i1.jpg' %}" alt="" /></li>
+                <li><img src="{% static 'img/i2.jpg' %}" alt="" /></li>
+                <li><img src="{% static 'img/i3.jpg' %}" alt="" /></li>
+                <li><img src="{% static 'img/i4.jpg' %}" alt="" /></li>
+                <li><img src="{% static 'img/i5.jpg' %}" alt="" /></li>
+                <li><img src="{% static 'img/i6.jpg' %}" alt="" /></li>
+                <li><img src="{% static 'img/i7.jpg' %}" alt="" /></li>
+                <li><img src="{% static 'img/i8.jpg' %}" alt="" /></li>
               </ul>
             </div>
           </div>
@@ -202,7 +202,7 @@
             </script>
             All rights reserved | This template is made with
             <i class="fa fa-heart-o" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <a href="{%static 'https://colorlib.com' %}" target="_blank">Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
           <div class="col-lg-4 col-sm-12 footer-social">
