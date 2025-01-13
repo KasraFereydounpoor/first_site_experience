@@ -63,14 +63,14 @@
       <div class="container main-menu">
         <div class="row align-items-center justify-content-between d-flex">
           <div id="logo">
-            <a href="index.html"
-              ><img src="{ % static 'img/logo.png" alt="" title=""
+            <a href="{% url 'website:index' %}"
+              ><img src="{% static 'img/logo.png' %}" alt="" title=""
             /></a>
           </div>
           <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="{% url 'wensite:index' %}">Home</a></li>
+              <li><a href="{% url 'website:about' %}">About</a></li>
               <li class="menu-has-children">
                 <a href="">Blog</a>
                 <ul>
@@ -91,7 +91,7 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="{% url 'website:contact' %}">Contact</a></li>
             </ul>
           </nav>
           <!-- #nav-menu-container -->
@@ -100,7 +100,9 @@
     </header>
     <!-- #header -->
 
-    {% block content %} {% endblock %}
+    {% block content %}
+
+    {% endblock %}
 
     <!-- start footer Area -->
     <footer class="footer-area section-gap">
@@ -176,14 +178,14 @@
             <div class="single-footer-widget mail-chimp">
               <h6 class="mb-20">InstaFeed</h6>
               <ul class="instafeed d-flex flex-wrap">
-                <li><img src="{ % static 'img/i1.jpg' %} ' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i2.jpg' %} ' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i3.jpg' %} ' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i4.jpg' %} ' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i5.jpg' %} ' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i6.jpg' %} ' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i7.jpg' %} ' %}" alt="" /></li>
-                <li><img src="{ % static 'img/i8.jpg' %} ' %}" alt="" /></li>
+                <li><img src="{ % static 'img/i1.jpg' %}" alt="" /></li>
+                <li><img src="{ % static 'img/i2.jpg' %}" alt="" /></li>
+                <li><img src="{ % static 'img/i3.jpg' %}" alt="" /></li>
+                <li><img src="{ % static 'img/i4.jpg' %}" alt="" /></li>
+                <li><img src="{ % static 'img/i5.jpg' %}" alt="" /></li>
+                <li><img src="{ % static 'img/i6.jpg' %}" alt="" /></li>
+                <li><img src="{ % static 'img/i7.jpg' %}" alt="" /></li>
+                <li><img src="{ % static 'img/i8.jpg' %}" alt="" /></li>
               </ul>
             </div>
           </div>
@@ -217,7 +219,7 @@
     <script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA' %}"></script>
     <script src="{% static 'js/jquery-ui.js' %}"></script>
     <script src="{% static 'js/easing.min.js' %}"></script>
     <script src="{% static 'js/hoverIntent.js' %}"></script>
