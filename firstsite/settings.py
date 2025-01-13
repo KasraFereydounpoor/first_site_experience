@@ -118,10 +118,8 @@ USE_TZ = True
 
 
 #has done by GPT but no mistakes !
-STATIC_URL = "static/"
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = '/media/'
