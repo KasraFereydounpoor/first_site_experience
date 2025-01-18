@@ -9,3 +9,12 @@ class Post(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
     published_date = models.DateTimeField(null=True)
     
+    
+    
+    class Meta:
+        ordering = ['-created_date']
+
+    #in dige generale faghat marbut be menuye admin nist
+    def __self__(self):
+        return "{} - {} ".format(self.title , self.id)
+    
