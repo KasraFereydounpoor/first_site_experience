@@ -2,7 +2,8 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+# to enable env in linux source env/bin/activate
+# to enable in windows env/scripts/activate.bat
 
 def main():
     """Run administrative tasks."""
