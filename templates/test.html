@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+    {{posts}}
+
+    {% for post in posts %}
+
+    {%if post.status == 1%}
+    <h1>{{post.title}}</h1>
+    <p>{{post}}</p>
+    <small>{{post.published_date}}</small>
+    {% endif %}
+    {% endfor %}
+</body>
+
+</html>
